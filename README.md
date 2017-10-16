@@ -1,7 +1,7 @@
 # 3-SAT to Latin Square reduction
 
 This respository contains all the files required to perform a 3-SAT to Latin
-Square reduction to a given instance.  The instance can then be certified with \
+Square reduction to a given instance.  The instance can then be certified with 
 a SAT solver ex. `glucose`.
 
 ---
