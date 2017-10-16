@@ -3,6 +3,7 @@
 This respository contains all the files required to perform a 3-SAT to Latin
 Square reduction to a given instance.  The instance can then be certified with \
 a SAT solver ex. `glucose`.
+
 ---
 
 ## Contents
@@ -13,15 +14,15 @@ respectively.
 Each folder contains the same set of selected instances, a version of qcp2cnf 
 that corresponds to:
 1.  in `/asn3/minimal-subset`, a minimal subset of properties of order n latin 
-square (properties a, c, d)
-2.  `/asn3/minimal-plus-1`, four properties of order n latin square (a, c, d, b)
-
+square (properties a, c, d);
+2.  `/asn3/minimal-plus-1`, four properties of order n latin square (a, c, d, b);
 3.  and `/asn3/minimal-plus-2`, five properties of order n latin square 
-(a, c, d, b, e) 
+(a, c, d, b, e).
 
 The code is quickly hacked together in C/C++. The reduction has already been 
 compiled, but depending on the your Linux machine you may have to modify all 
 access rights with `chmod 777 qcp2cnf`.
+
 ---
 
 ## Procedure to reduce and certify if Latin Squares are polytime solvable
@@ -46,6 +47,7 @@ $	./glucose < q_10_01.cnf > q_10_01.out
 ```
 where `q_10_01.out` contains all the standard output text.
 
+---
 
 ### Compiling instructions
 Note:  If the files still can't run, try to recompile the certifier/sat solver.
